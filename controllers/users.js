@@ -11,7 +11,7 @@ export const registerUser = async(req, res, next) => {
         });
 
         // The "profilepic" gets an url-path
-        newUser.profilepic = `http://localhost:3000/uploads/${newUser.profilepic}`
+        newUser.profilepic = `https://deploying-simple-backend-i8de.onrender.com/uploads/${newUser.profilepic}`
 
         // 
         await newUser.save();
